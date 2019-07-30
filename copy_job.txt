@@ -1,0 +1,111 @@
+Download do git:
+
+* link
+
+Configuração do git:
+
+* git config --global user.name <your name>
+* git config --global user.email <your email>
+
+Iniciando o git:
+
+* git init, o mesmo cria o diretório .git, este salva as configurações e detalhes
+
+Explicar o git add e git commit, explicitando aquela imagem: untracked ...
+Explicar commit com opção -am (commitar todos os arquivos diretamente, já os adicionando para "stage")
+
+Visualização de Commits:
+
+* git log
+
+> log com mais informações
+	* git log --decorete
+> log com filtro de autor
+	* git log --author="name or part of name of author"
+> visualização de contribuição 
+	* git shortlog : mostra os autores dos commits com sua quantidade de commits e quais foram os commits
+	* git shortlog -sn : mostra apenas os autores e a quantidade de commits
+	* git shortlog --graph : mostra de forma gráfica o que está acontecendo com as branchs
+	* git show <hash> : mostra as mudanças do commit de hash <hash>
+	* git diff : mostra quais foram suas mudanças antes de commitar um arquivo
+	* git diff --name-only : é o git diff mostrando apenas o nome dos arquivos que foram alterados 
+	
+Retornando para versão anterior de um arquivo:
+
+* git checkout <name of file> : caso o arquivo esteja como "modified", o mesmo poderá voltar para "unmodified"
+* git reset HEAD <name of file> : após o arquivo estar pronto para ser commitado (stage), o mesmo pode
+voltar para o estado de "modified" com esse comando. Para verificar isso, aplicasse o comando "git diff"
+antes e após a operação de "git reset ..."
+* git reset --<option> <hash> :
+	-> soft : reseta o commit para área de "stage", logo antes de ser commitado
+	-> mixed : reseta o commit para área de "modified", o qual ainda terá que ser adicionando a "stage"
+	-> hard : ignora totalmente o commit, voltando para a versão anterior do projeto
+	
+Obs.: O "git reset --hard <hash>" só deve ser utilizado caso o usuário não faça o "push" para um repositório remoto,
+	de modo a evitar possíveis problemas, já que o mesmo altera o histórico dos commits
+	
+	
+Explicar como deve ser criado um repositório no github e como é, basicamente, feito o acesso ao ropositório.
+Para isso, mostrar o link para o tutorial dos métodos SSH e do HTTP
+
+Após a criação do repositório e configuração da chave SSH, basta ligar o repositório local ao remoto. Para isso,
+utilizamos:
+
+* git remote add origin <link of repository>
+
+Obs.: para checar se está correto, digite "git remote", o qual deve gerar como saída "origin"
+
+Após isso, precisa-se enviar os dados locais de configurações e arquivos para o repositório remoto:
+
+* git push -u origin master : 
+	> push : enviar os dados 
+	> -u : usado para não precisar a toda vez utilizar novamente o "origin master"
+	> origin : para onde vão os dados
+	> master : de onde vão os dados (sua máquina)
+
+Clonando um repository:
+
+* git clone <link of repository>
+
+Criando cópia de outro repositório para fazer alterações e depois fazer o "pull request"
+
+Criando uma branch: 
+
+* git checkout -b <name of new branch>
+
+Obs: para checar criação, digite "git branch", o qual mostrará todas as branchs disponíveis
+
+Navegando e deletando branchs :
+
+* git checkout <name of branch> : mudar de branchs
+* git checkout -D <name of branch> : deletar uma branch 
+
+Unindo branchs com "merge" e "rebase": 
+
+* merge: cria um histórico detalhado de commits, porém meio complicado para entender 
+* rebase: sempre joga o commit de uma branch na frente do commit onde a master está. Desse modo, o 
+histórico é perdido, mas é mais simples de ler o mesmo.
+
+Ignorando arquivos ao enviar os dados para o local remoto:
+
+.gitignore
+
+Configurando atalho no git :
+
+* git config --global alias.<shortcut> <command>
+
+Trabalhando com tags para versionamento no Git:
+
+* git tag -a <version> -m "<mensage that identify the version" : criando a tag
+* git tag : checando as tags existentes
+* git push origin master --tags  : comando para enviar as tags para versão remota
+* git tag -d <name of tag> : deletar a tag do repositório local
+
+Revertendo o commit para poder assim não perder tudo, quando se usa o "reset". Desse modo, é possível não 
+quebrar a aplicação e ao mesmo tempa salvar o que estava sendo feito.
+
+* git revert <hash> 
+
+Para apagar branchs e tags do repositório remoto: 
+
+* git push origin :<name of branch or tag>
