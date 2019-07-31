@@ -46,3 +46,16 @@ To see the commits, you can write `git log` only. But if you want to see more in
 	* `git diff --name-only`: this shows only the changed files before the commit
 
 ### > Refectory to Before Version
+
+If you modify a file, but didn't want to do it, obvious, you can recover the before state. This section treats about it.
+
+* `git checkout <name of file>`: you can recover from **modified** to **unmodified** file. 
+* `git reset HEAD <name of file>`: after you add the files, them can be recovered from **staged** to **modified** with this command
+* `git reset --<option> <hash>`: This command has three options:
+	* `soft`: reset the commit to **staged** area, just before to be commited
+	* `mixed`: reset the commit to **modified** area
+	* `hard`: clear the commit, coming back to before version
+
+Obs.: As the `git reset --hard <hash>`clear the commit and change the historic, it can cause troubles in the future. Thus, it can't be used after a `git push` command.
+
+### > A Remote Repository
