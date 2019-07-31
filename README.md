@@ -22,3 +22,4 @@ The command above create a directory called **.git**, that save all the configur
 Now, you'll see the mean concepts/commands, as visualization of commits
 
 ...
+![image](git-general.png)
