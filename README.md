@@ -59,3 +59,34 @@ If you modify a file, but didn't want to do it, obvious, you can recover the bef
 Obs.: As the `git reset --hard <hash>`clear the commit and change the historic, it can cause troubles in the future. Thus, it can't be used after a `git push` command.
 
 ### > A Remote Repository
+
+The remote repository is a way to post your codes on the cloud. In this case, you can access it by Web, for example. The most popular online repository is the [GitHub](https://github.com/), which I'll explain you how it works.
+
+Once you have a account in it, you have to create a SSH key folloing the [tutorial]([https://help.github.com/en/articles/connecting-to-github-with-ssh](https://help.github.com/en/articles/connecting-to-github-with-ssh) to access your online repositories.
+
+After you had configured your GitHub account, link you local git with your online git adding the following command:
+
+`git remote add origin <link of online repository>`
+
+To check it, use `git remote` and you should see the output `origin`
+
+After, use the push command to send your local files to online repository as following:
+
+`git push -u origin master`:
+* push: send your datas
+* -u: when you don't want code all the times `origin master` to push your datas, use it
+* origin: to
+* master: from
+
+### > Difference between the 'clone' and 'fork': 
+	
+The `clone` command is usually used to clone a repository to you, but you cannot cheate a `pull request`, as with the `fork` concept. 
+To make a clone, you have to do `git clone <name of repository>`
+
+### > Manage Branchs:
+
+A 'branch' is a pointer to specific commit, this is, a "local" to put your changes without break other people changes. 
+
+* **Create a new branch:** `git checkout -b <name of new branch>`
+* **Change the local branch:** `git checkout <name of branch>`
+* **Delete a local branch:** `git checkout -D <name of branch>`
