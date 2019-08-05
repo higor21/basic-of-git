@@ -90,3 +90,27 @@ A 'branch' is a pointer to specific commit, this is, a "local" to put your chang
 * **Create a new branch:** `git checkout -b <name of new branch>`
 * **Change the local branch:** `git checkout <name of branch>`
 * **Delete a local branch:** `git checkout -D <name of branch>`
+
+You also can use `merge` or `rebase` working with branchs. Both the cases, you are merging one branch to another. The difference between it, is that `merge` command make a new commit saving the historic of commits, while another miss the historic putting the commit of one branch in front other branch's commit. 
+
+`git merge/rebase <name of another branch>`
+
+Example: Imagine you're in B1  branch and you want to merge it to B2 branch. So, you have to do `git merge B2`
+
+### > Project versioning on Git:
+
+If you want to save each step from your project, declaring each version of it, you can manage it with tags concept. 
+
+Commands: 
+* `git tag -a <version> -m "<mensage>"`: create a tag
+* `git tag`: checking created tags 
+* `git push origin master --tags`: commant to send all the tags to remote version
+* `git tag -d <name of tag>`: deleting tag from local repository 
+
+### > Other utilities: 
+* Reverting the commit to save what you changed, before to use reset command. Thus, it isn't possible to break the application and save what you did, in the same time.
+`git revert <hash of commit>`
+* Deleting a branch or tag from remote repository:
+`git push origin :<name of branch or tag>`
+or
+`git push origin --delete <name of branch or tag>`
