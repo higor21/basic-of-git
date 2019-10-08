@@ -7,13 +7,16 @@ Before explaining to you how this important current development tool works, I ne
 ## Fundamental Concepts:
 
 ### > Sprint:
-    I think it's tha main concept, because all the things happen during a **sprint**, it presents a Time Box which a set of activities should be executed in two weeks or one month.
+
+I think it's tha main concept, because all the things happen during a **sprint**, it presents a Time Box which a set of activities should be executed in two weeks or one month.
 
 ### > Product Owner:
-    ...
+
+...
 
 ### > Product Backlog:
-    It is where are all the desired features/functionalities from the final product. These features in this place is defined by the **Product Owner** and he's responsible to order that features and to know how to explain each one so clearly for any person. In addition, it's important know that it can starts only with some features and over time to be filled with other functionalities.
+
+It is where are all the desired features/functionalities from the final product. These features in this place is defined by the **Product Owner** and he's responsible to order that features and to know how to explain each one so clearly for any person. In addition, it's important know that it can starts only with some features and over time to be filled with other functionalities.
 
 ...
 
