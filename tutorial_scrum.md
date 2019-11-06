@@ -28,7 +28,7 @@ They're people how are responsible for the development of the applications durin
 
 ### > Sprint Backlog:
 
-...
+This represent all the tasks that will be implemented during the sprint. Those tasks are moved from **Product Backlog** to **Sprint Backlog** according with the **Product Owner** and the **Scrum Team**, because it knows more or less how much time is needed to do those tasks. In addition, the **Scrum Master** also is responsable for manage these tasks during the sprint. So he knows, according to **Sprint Burndown Chart**, how the sprint situation is going. 
 
 ### > Daily Scrum:
 
