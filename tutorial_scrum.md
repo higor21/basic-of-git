@@ -36,6 +36,7 @@ It's an important daily meeting where each member from the **Scrum Team** can re
 * What did you do tomorrow ? 
 * What are you going to do today ?
 * There are some impediment ? 
+
 So, all the Team can now understand what is happening in the **Sprint**. 
 
 ### > Sprint Planning Meeting:
