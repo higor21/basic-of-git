@@ -32,7 +32,11 @@ This represent all the tasks that will be implemented during the sprint. Those t
 
 ### > Daily Scrum:
 
-...
+It's an important daily meeting where each member from the **Scrum Team** can report a basic status about his part of the project. Basically they can answer these three questions below:
+* What did you do tomorrow ? 
+* What are you going to do today ?
+* There are some impediment ? 
+So, all the Team can now understand what is happening in the **Sprint**. 
 
 ### > Sprint Planning Meeting:
 
