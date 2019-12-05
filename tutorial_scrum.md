@@ -41,7 +41,7 @@ So, all the Team can now understand what is happening in the **Sprint**.
 
 ### > Sprint Planning Meeting:
 
-...
+
 
 ### > Sprint Retrospective:
 
