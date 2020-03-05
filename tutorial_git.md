@@ -38,11 +38,17 @@ To see the commits, you can just write `git log`. But if you want to see more in
 
 - **log with author filter:** `git log --author=<name or part of name of author>`
 - **visualization of contribution:**
+
   _ `git shortlog`: shows the authors, the amount of commits from each author and their respective commits.
+  
   _ `git shortlog -sn`: shows only the authors of commits and their amount of commits.
+  
   _ `git shortlog --graph`: shows graphically how are the branchs
+  
   _ `git show <hash>`: shows a specific commit
+  
   _ `git diff`: shows what were your changes before commit the files
+  
   _ `git diff --name-only`: this shows only the changed files before the commit
 
 ### > Refectory to Before Version
@@ -91,7 +97,7 @@ A 'branch' is a pointer to specific commit, this is, a "local" to put your chang
 - **Change the local branch:** `git checkout <name of branch>`
 - **Delete a local branch:** `git checkout -D <name of branch>`
 
-You also can use `merge` or `rebase` when working with branchs. Both the cases, you are merging one branch to another. The difference between it, is that `merge` command makes a new commit saving the commits' history, while the other mix the history, putting the commit of one branch in front other branch's commit.
+You can also use `merge` or `rebase` when working with branchs. Both the cases, you are merging one branch to another. The difference between it, is that `merge` command makes a new commit saving the commits' history, while the other one mix the history, putting the commit of one branch in front other branch's commit.
 
 `git merge/rebase <name of another branch>`
 
@@ -110,7 +116,7 @@ Commands:
 
 ### > Other utilities:
 
-- Reverting the commit to save what you changed, before using reset command. Thus, it isn't possible to break the application and save what you did, in the same time.
+- Reverting the commit to save what you changed, before using reset command. Thus, it isn't possible to break the application and save what you did, at the same time.
   `git revert <hash of commit>`
 - Deleting a branch or tag from remote repository:
   `git push origin :<name of branch or tag>`
